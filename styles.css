@@ -29,6 +29,15 @@ a {
   background-color: rgba(233, 233, 233, 0.4);
 }
 
+.apple-hamburger-menu {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
 .nav-links {
   display: flex;
   gap: 35px;
@@ -59,6 +68,10 @@ a {
 .nav-links .nav-icon {
   display: flex;
   align-items: center;
+}
+
+.nav-icon {
+  fill: rgba(0, 0, 0, 0.78);
 }
 
 .main-title {
@@ -116,7 +129,7 @@ a {
   gap: 1em;
   background-color: #f8f8f8;
   color: blue;
-  border-radius: 25px;
+  border-radius: 15px;
   min-width: 200px;
   text-align: center;
   box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.07);
@@ -221,6 +234,19 @@ a {
 @media screen and (max-width: 640px) {
   .header {
     padding: 0.5em 0;
+  }
+
+  .nav-links {
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+
+  .nav-icon {
+    scale: 130%;
+  }
+
+  .apple-hamburger-menu {
+    display: flex;
   }
 
   .apple-section {
