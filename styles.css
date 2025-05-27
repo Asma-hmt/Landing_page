@@ -9,9 +9,16 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .apple-section {
   max-width: 1024px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .header {
@@ -116,6 +123,11 @@ body {
   padding: 3em;
 }
 
+.support-box a {
+  color: #0071e3;
+  text-decoration: none;
+}
+
 .support-pic img {
   width: 100%;
   height: 70px;
@@ -152,7 +164,7 @@ body {
   padding: 15px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
   padding-left: 3em;
 }
@@ -165,18 +177,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 20px;
+  padding: 50px 20px;
   background-color: rgba(0, 0, 0, 0.05);
   text-align: center;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3em;
 }
 
 .youtube-support-card {
   background-color: white;
   border-radius: 25px;
-  padding: 2em;
+  overflow: hidden;
   max-width: 1024px;
   width: 100%;
+}
+
+.youtube-support-info {
+  padding: 2em;
 }
 
 .youtube-desc {
@@ -192,7 +209,8 @@ body {
 
 .apple-support-banner {
   width: 100%;
-  margin-top: 2em;
+  display: flex;
+  align-items: end;
 }
 
 .apple-support-banner img {
@@ -236,6 +254,7 @@ body {
   }
 
   .apple-support-banner img {
+    height: 200px;
     object-fit: cover;
     object-position: center;
   }
